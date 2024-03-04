@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        /* background-image: url("https://cdn.discordapp.com/attachments/893241074699608084/1058432014472200192/Liberty_bg_1.jpg"); */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 98% 95%;
+        padding: 4% 12% 9%;
+        border: 1px solid cyan;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        /* gap: ${header.style.gap}; */
+        margin: 128px 0 64px;
+    }
+    .background {
+        position: absolute;
+        /* width: 100vw; */
+        object-fit: contain;
+        height: 95%;
+        border: 1px solid blue;
+    }
+    .content {
+        position: relative;
+        border: 1px solid red;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header, footer {
+        text-align: center;
+    }
+    h4 {
+        font-weight: 600;
+        margin: 0;
+    }
+    main {
+        text-align: justify;
+    }
+    p {
+        margin-bottom: 18px;
+    }
+    .firma {
+        margin-bottom: 4px;
+    }
+    .firma-img {
+        width: 43%;
+    }
+    footer {
+        bottom: 9%;
+        position: absolute;
+        width: 76%;
+    }
+    span, a {
+        color: #808080;
+        font-size: 14px;
+    }
+    .day, .price {
+        color: black;
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+    a {
+        display: inline;
+        margin-right: 4px;
+    }
+    table {
+        width: 100%;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-size: 11px;
+    }
+    td {
+        text-align: center;
+        width: fit-content;
+        padding: 1px 4px;
+    }
+</style>
+<body>  
+    <img class="background" src="https://cdn.discordapp.com/attachments/893241074699608084/1058432014472200192/Liberty_bg_1.jpg"  />
+    <main class="content">
+        <header>    
+            ${header.content}                    
+        </header>
+        <main>
+            ${content}
+        </main>
+        <footer>
+            <span>
+                Oficina Principal Calle 72 No. 10-07 Bogotá D.C - Colombia Tel: 3103300
+            </span>
+            <br>
+            <a href="www.libertyseguros.co">
+                www.libertyseguros.co
+            </a>
+            <span>
+                NIT. 860.039.988-0
+            </span>
+        </footer>
+    </main>
+    
+</body>
+</html>
